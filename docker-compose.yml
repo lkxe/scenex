@@ -1,0 +1,15 @@
+services:
+  scenex:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8153:8153"
+    environment:
+      - NODE_ENV=production
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "http://localhost:8153"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped

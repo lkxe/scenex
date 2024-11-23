@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+    <!-- Main composition, slightly scaled down to fit better in circle -->
+    <g transform="translate(100 100) scale(0.85)">
+        <!-- Extracting frame series -->
+        <g transform="rotate(-15)">
+            <!-- Base frame with subtle pulse -->
+            <rect x="-45" y="-45" width="90" height="90"
+                  fill="none"
+                  stroke="#60A5FA"
+                  stroke-width="6"
+                  rx="12"
+                  opacity="0.3">
+                <animate
+                        attributeName="opacity"
+                        values="0.3;0.5;0.3"
+                        dur="3s"
+                        repeatCount="indefinite"/>
+            </rect>
+
+            <!-- Middle frame with scale animation -->
+            <rect x="-35" y="-35" width="70" height="70"
+                  fill="none"
+                  stroke="#C084FC"
+                  stroke-width="6"
+                  rx="10"
+                  opacity="0.6">
+                <animate
+                        attributeName="width"
+                        values="70;75;70"
+                        dur="3s"
+                        repeatCount="indefinite"/>
+                <animate
+                        attributeName="height"
+                        values="70;75;70"
+                        dur="3s"
+                        repeatCount="indefinite"/>
+                <animate
+                        attributeName="x"
+                        values="-35;-37.5;-35"
+                        dur="3s"
+                        repeatCount="indefinite"/>
+                <animate
+                        attributeName="y"
+                        values="-35;-37.5;-35"
+                        dur="3s"
+                        repeatCount="indefinite"/>
+            </rect>
+
+            <!-- Front frame with fade animation -->
+            <rect x="-25" y="-25" width="50" height="50"
+                  fill="none"
+                  stroke="#F472B6"
+                  stroke-width="6"
+                  rx="8"
+                  opacity="0.9">
+                <animate
+                        attributeName="opacity"
+                        values="0.9;1;0.9"
+                        dur="3s"
+                        repeatCount="indefinite"/>
+            </rect>
+
+            <!-- Accent lines with flash effect -->
+            <line x1="-15" y1="-15" x2="15" y2="15"
+                  stroke="#FDF4FF"
+                  stroke-width="6"
+                  stroke-linecap="round">
+                <animate
+                        attributeName="stroke-width"
+                        values="6;8;6"
+                        dur="3s"
+                        repeatCount="indefinite"/>
+                <animate
+                        attributeName="opacity"
+                        values="1;0.8;1"
+                        dur="3s"
+                        repeatCount="indefinite"/>
+            </line>
+            <line x1="15" y1="-15" x2="-15" y2="15"
+                  stroke="#FDF4FF"
+                  stroke-width="6"
+                  stroke-linecap="round">
+                <animate
+                        attributeName="stroke-width"
+                        values="6;8;6"
+                        dur="3s"
+                        repeatCount="indefinite"/>
+                <animate
+                        attributeName="opacity"
+                        values="1;0.8;1"
+                        dur="3s"
+                        repeatCount="indefinite"/>
+            </line>
+        </g>
+    </g>
+</svg>
