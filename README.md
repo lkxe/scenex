@@ -8,7 +8,7 @@
   <a href="#features">Features</a> •
   <a href="#development">Development</a> •
   <a href="#deployment">Deployment</a> •
-  <a href="#development">Development</a> •
+  <a href="#issues">Known Issues</a> •
   <a href="#license">License</a>
 </p>
 
@@ -96,6 +96,10 @@ docker compose down
 ```
 
 Access the application at `http://localhost:8153`
+
+## Issues
+
+- As much as I'd love to, it doesn't work on mobile yet because mobile workers suck. I haven't found a proper solution to this problem yet. I will have to look deeper into it
 
 ## Performance Considerations
 
